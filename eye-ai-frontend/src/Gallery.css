@@ -1,0 +1,53 @@
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("./resources/fonts/Poppins/Poppins-ExtraBold.ttf") format('ttf');
+    /* Añade otros formatos si los tienes */
+    /* Puedes especificar diferentes rutas para los diferentes formatos de archivo */
+  }
+
+  .titulo{
+    font-family:"Poppins", sans-serif;
+    color: white;
+    margin-bottom: 50px;
+    margin-right: -200px;
+    margin-left: 220px;
+    margin-top: 50px;
+    margin-bottom: -30px;
+  }
+
+.gallery {
+    display: grid;
+    width: 500px;
+    height: 300px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: -0px;
+    margin-left: 100px;
+    margin-top: 100px;
+    position: relative;
+    
+  }
+  
+  .gallery-item {
+   
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    position: relative;
+  }
+  
+  .gallery-item img {
+    width: 80%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover img {
+    width: 200%;
+    height: auto;
+   
+    transform: scale(1.5);
+    z-index: 10;
+    
+  }
+  

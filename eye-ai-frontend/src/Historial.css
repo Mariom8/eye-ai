@@ -1,0 +1,78 @@
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("./resources/fonts/Poppins/Poppins-ExtraBold.ttf") format('ttf');
+    /* Añade otros formatos si los tienes */
+    /* Puedes especificar diferentes rutas para los diferentes formatos de archivo */
+  }
+
+  .main {
+    font-family:"Poppins", sans-serif;
+    color: white;
+  }
+
+  h1{
+    margin-top: 40px;
+    padding-bottom: -20px;
+    margin-left: 550px;
+  }
+
+  .title{
+    margin-left: 185px;
+    padding-top: 10px;
+  }
+
+  .top {
+    width: 40%; /* Ancho del rectángulo */
+    height: 500px;
+    margin: 0px;
+    margin-top: 50px;
+    margin-left: 520px;
+    background-color: #ffffff; /* Color del rectángulo */
+    padding: 10px; /* Espacio interno del rectángulo */
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); /* Sombra */
+    border-radius: 20px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.object{
+  width: 50%;
+}
+
+.times-seen{
+  width: 20%;
+}
+
+/* Estilo para el encabezado */
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Estilo para las filas impares */
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Estilo para cuando pasas el ratón sobre una fila */
+tr:hover {
+    background-color: #e6e6e6;
+}
+
+  h2{
+    color: black;
+  }
+
+  

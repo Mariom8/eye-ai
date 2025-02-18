@@ -1,0 +1,132 @@
+     
+          
+          @font-face {
+            font-family: 'Poppins';
+            src: url("./resources/fonts/Poppins/Poppins-ExtraBold.ttf") format('ttf');
+            /* Añade otros formatos si los tienes */
+            /* Puedes especificar diferentes rutas para los diferentes formatos de archivo */
+          }
+          
+          
+          .navbar {
+            background-color: #333; /* Fondo oscuro */
+            /* background-color: black; */
+            color: #fff; /* Texto blanco */
+            padding: 20px 30px;
+            margin-top: -8px;
+            margin-left: -8px;
+            margin-right: -8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family:"Poppins", sans-serif;
+            font-weight: 500;
+          }
+          
+          .navbar-brand {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            margin-left: 20px;
+          }
+          
+          .navbar-name {
+            color: #fff;
+            font-size: 80px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            position: relative;
+            animation: wave 4s 1 forwards;
+          }
+
+          @keyframes wave {
+            0% {
+              text-shadow: 0 0 0 #fff; /* Sin sombra */
+            }
+            30% {
+              text-shadow: 0 0 50px #45acf0; /* Sombra azul */
+            }
+            60% {
+              text-shadow: 0 0 50px #2972a2; /* Sombra azul */
+            }
+            100% {
+              text-shadow: 0 0 0 #fff; /* Sin sombra */
+            }
+          }
+
+          .navbar-logo {
+            width: 200px; /* Tamaño del logo */
+            height: auto;
+            margin-right: 100px;
+          }
+          
+          .navbar-menu {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 80px;
+            margin-right: 100px;
+          }
+          
+          .navbar-menu li {
+            display: inline-block;
+            margin-right: 20px;
+          }
+          
+          .navbar-menu li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 18px;
+            position: relative;
+            transition: color 0.5s ease;
+          }
+          
+          .navbar-menu li a::before,
+          .navbar-menu li a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            height: 1px;
+            background-color: #45acf0;
+            transition: transform 0.5s ease;
+          }
+          
+          .navbar-menu li a::before {
+            top: 0;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: bottom left;
+          }
+          
+          .navbar-menu li a::after {
+            bottom: 0;
+            right: 0;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+          }
+          
+          .navbar-menu li a:hover::before,
+          .navbar-menu li a:hover::after {
+            transform: scaleX(1);
+          }
+          
+          .navbar-menu li a:hover {
+            color: #45acf0;
+          }
+          
+
+          
+   /* Añadido media query para estilos específicos de móviles */
+@media only screen and (max-width: 600px) {
+  .navbar {
+   
+    width: 300%;
+
+  }
+  .navbar-menu {
+    margin-top: 10px; /* Ajuste de margen superior para móviles */
+    width: 100%; /* Hacer que el menú ocupe todo el ancho */
+    margin-left: 100px;
+  }
+}

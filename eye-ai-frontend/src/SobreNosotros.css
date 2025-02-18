@@ -1,0 +1,72 @@
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("./resources/fonts/Poppins/Poppins-ExtraBold.ttf") format('ttf');
+    /* Añade otros formatos si los tienes */
+    /* Puedes especificar diferentes rutas para los diferentes formatos de archivo */
+  }
+
+h1{
+    margin-top: 100px;
+    font-family:"Poppins", sans-serif;
+    color: white;
+}
+
+p{
+    margin-top: 50px;
+    margin-left: 550px;
+    font-family:"Poppins", sans-serif;
+    color: white;
+    line-height: 1.5;
+
+}
+
+.logo-gmail{
+    height: 5%;
+    width: 5%;
+    margin-left: 600px;
+}
+
+.logo-link{
+    height: 5%;
+    width: 8%;
+    margin-left: 570px;
+}
+
+.gmail{
+    display: flex;
+}
+
+.linkedin{
+    margin-top: 50px;
+    display: flex;
+}
+
+li {
+    list-style-type: none; 
+    font-family:"Poppins", sans-serif;
+    color: white;
+}
+
+.correos{
+    font-family:"Poppins", sans-serif;
+    color: white;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.nombres{
+    font-family:"Poppins", sans-serif;
+    color: white;
+    margin-left: -30px;
+    margin-top: 40px;
+}
+.contacto{
+    margin-top: 50px;
+}
+
+a{
+    color: white;
+    
+}
